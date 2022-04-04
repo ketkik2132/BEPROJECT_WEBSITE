@@ -1,0 +1,34 @@
+.footer{
+   
+    bottom: 0;
+    padding-top: 5%;
+    margin-top: 5%;
+    width: 100%;
+    max-width: 100vw;
+    max-height: 100%;
+    position: relative;
+    background-color: black;
+    
+    
+    .optionsection{
+        display: flex;
+        margin-left: 10vw;
+        margin-right: 5vw;
+        width: 80%;
+    .col1{
+        width: 45%;
+        margin: 3vh 5vw;
+        .heading{
+            color: white;
+        }
+        .option{
+            color:darkgray;
+            font-size:large;
+        }
+        .listelement{
+         padding: 7px;
+        }
+    }
+}
+   
+}
