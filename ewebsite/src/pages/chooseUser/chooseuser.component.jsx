@@ -10,14 +10,14 @@ this.state={
         {
             title:'CUSTOMER',
             id:1,
-            imageUrl:'https://images.pexels.com/photos/1413412/pexels-photo-1413412.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+            imageUrl:'https://images.pexels.com/photos/13861/IMG_3496bfree.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
             size:'large',
             linkUrl:'/customersignin'
         },
         {
             title:'SERVICE CENTER',
             id:2,
-            imageUrl:'https://images.pexels.com/photos/305070/pexels-photo-305070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+            imageUrl:'https://images.pexels.com/photos/3849551/pexels-photo-3849551.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
             size:'large',
             linkUrl:'/servicesignin'
         }
@@ -39,8 +39,11 @@ this.state={
                 
                 )
             }
+
+            
         </div>
-        
+
+       
       );
   }  
 }

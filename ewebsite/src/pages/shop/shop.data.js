@@ -1,249 +1,210 @@
 const SHOP_DATA = [
     {
       id: 1,
-      title: 'Hats',
-      routeName: 'hats',
+      title: 'Top Two Wheeler',
+      routeName: 'toptwowheel',
       items: [
         {
           id: 1,
-          name: 'Brown Brim',
-          imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
-          price: 25
+          name: 'Ganesh Garages',
+          imageUrl: 'https://images.pexels.com/photos/1131221/pexels-photo-1131221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Kothrud"
         },
         {
           id: 2,
-          name: 'Blue Beanie',
-          imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
-          price: 18
+          name: 'AutoCare center',
+          imageUrl: 'https://images.unsplash.com/photo-1594132665437-d2e8fd3c7ed0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+          price: "Warje"
         },
         {
           id: 3,
-          name: 'Brown Cowboy',
-          imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
-          price: 35
+          name: 'New Bike servicing center',
+          imageUrl: 'https://images.unsplash.com/photo-1581858544302-c40e2254ff87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
+          price: "Warje"
         },
         {
           id: 4,
-          name: 'Grey Brim',
-          imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
-          price: 25
+          name: 'Raju Two Wheeler services',
+          imageUrl: 'https://images.unsplash.com/photo-1581858544302-c40e2254ff87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
+          price: "Baner"
         },
         {
           id: 5,
-          name: 'Green Beanie',
-          imageUrl: 'https://i.ibb.co/YTjW3vF/green-beanie.png',
-          price: 18
+          name: 'My Bike Care Center',
+          imageUrl: 'https://images.unsplash.com/photo-1594132665437-d2e8fd3c7ed0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+          price: "Kothrud"
         },
         {
           id: 6,
-          name: 'Palm Tree Cap',
-          imageUrl: 'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
-          price: 14
+          name: 'Sai service center',
+          imageUrl: 'https://images.unsplash.com/photo-1581858544302-c40e2254ff87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
+          price: "Baner"
         },
         {
           id: 7,
-          name: 'Red Beanie',
-          imageUrl: 'https://i.ibb.co/bLB646Z/red-beanie.png',
-          price: 18
+          name: 'The New Poona Garage',
+          imageUrl: 'https://images.pexels.com/photos/1131221/pexels-photo-1131221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Deccan"
         },
         {
           id: 8,
-          name: 'Wolf Cap',
-          imageUrl: 'https://i.ibb.co/1f2nWMM/wolf-cap.png',
-          price: 14
+          name: "Bike Care",
+          imageUrl: 'https://images.pexels.com/photos/1131221/pexels-photo-1131221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Warje"
         },
         {
           id: 9,
-          name: 'Blue Snapback',
-          imageUrl: 'https://i.ibb.co/X2VJP2W/blue-snapback.png',
-          price: 16
+          name: 'The Modern Bike Point',
+          imageUrl: 'https://images.pexels.com/photos/1131221/pexels-photo-1131221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Baner"
         }
       ]
     },
     {
       id: 2,
-      title: 'Sneakers',
-      routeName: 'sneakers',
+      title: 'Top Four Wheeler',
+      routeName: 'topfourwheel',
       items: [
         {
           id: 10,
-          name: 'Adidas NMD',
-          imageUrl: 'https://i.ibb.co/0s3pdnc/adidas-nmd.png',
-          price: 220
+          name: 'The Car Care',
+          imageUrl: 'https://images.pexels.com/photos/3806249/pexels-photo-3806249.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Warje"
         },
         {
           id: 11,
-          name: 'Adidas Yeezy',
-          imageUrl: 'https://i.ibb.co/dJbG1cT/yeezy.png',
-          price: 280
+          name: 'Raju Garages',
+          imageUrl: 'https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Kothrud"
         },
         {
           id: 12,
-          name: 'Black Converse',
-          imageUrl: 'https://i.ibb.co/bPmVXyP/black-converse.png',
-          price: 110
+          name: 'MechIt garages',
+          imageUrl: 'https://images.pexels.com/photos/3807386/pexels-photo-3807386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Deccan"
         },
         {
           id: 13,
-          name: 'Nike White AirForce',
-          imageUrl: 'https://i.ibb.co/1RcFPk0/white-nike-high-tops.png',
-          price: 160
+          name: 'The shining car care point',
+          imageUrl: 'https://images.pexels.com/photos/4489735/pexels-photo-4489735.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Baner"
         },
         {
           id: 14,
-          name: 'Nike Red High Tops',
-          imageUrl: 'https://i.ibb.co/QcvzydB/nikes-red.png',
-          price: 160
+          name: 'Diamond Garage',
+          imageUrl: 'https://images.pexels.com/photos/3807386/pexels-photo-3807386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Paud Road"
         },
         {
           id: 15,
-          name: 'Nike Brown High Tops',
-          imageUrl: 'https://i.ibb.co/fMTV342/nike-brown.png',
+          name: 'The HighTech Garage',
+          imageUrl: 'https://images.pexels.com/photos/3644847/pexels-photo-3644847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
           price: 160
         },
         {
           id: 16,
-          name: 'Air Jordan Limited',
-          imageUrl: 'https://i.ibb.co/w4k6Ws9/nike-funky.png',
-          price: 190
+          name: 'Modern Services',
+          imageUrl: 'https://images.pexels.com/photos/3807329/pexels-photo-3807329.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Shivaji Nagar"
         },
         {
           id: 17,
-          name: 'Timberlands',
-          imageUrl: 'https://i.ibb.co/Mhh6wBg/timberlands.png',
-          price: 200
+          name: 'Nissan Car Care',
+          imageUrl: 'https://images.pexels.com/photos/7629190/pexels-photo-7629190.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Kothrud"
         }
       ]
     },
     {
       id: 3,
-      title: 'Jackets',
-      routeName: 'jackets',
+      title: 'Recommended',
+      routeName: 'recommended',
       items: [
         {
           id: 18,
-          name: 'Black Jean Shearling',
-          imageUrl: 'https://i.ibb.co/XzcwL5s/black-shearling.png',
-          price: 125
+          name: 'Diamond Garage',
+          imageUrl: 'https://images.pexels.com/photos/3807386/pexels-photo-3807386.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Paud Road"
         },
         {
           id: 19,
-          name: 'Blue Jean Jacket',
-          imageUrl: 'https://i.ibb.co/mJS6vz0/blue-jean-jacket.png',
-          price: 90
+          name: 'The Modern Bike Point',
+          imageUrl: 'https://images.pexels.com/photos/1131221/pexels-photo-1131221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Baner"
         },
         {
           id: 20,
-          name: 'Grey Jean Jacket',
-          imageUrl: 'https://i.ibb.co/N71k1ML/grey-jean-jacket.png',
-          price: 90
+          name: 'Nissan Car Care',
+          imageUrl: 'https://images.pexels.com/photos/7629190/pexels-photo-7629190.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Kothrud"
         },
         {
           id: 21,
-          name: 'Brown Shearling',
-          imageUrl: 'https://i.ibb.co/s96FpdP/brown-shearling.png',
-          price: 165
+          name: 'The HighTech Garage',
+          imageUrl: 'https://images.pexels.com/photos/3644847/pexels-photo-3644847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: 160
         },
         {
           id: 22,
-          name: 'Tan Trench',
-          imageUrl: 'https://i.ibb.co/M6hHc3F/brown-trench.png',
-          price: 185
+          name: 'The HighTech Garage',
+          imageUrl: 'https://images.pexels.com/photos/3644847/pexels-photo-3644847.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: 160
         }
       ]
     },
     {
       id: 4,
-      title: 'Womens',
-      routeName: 'womens',
+      title: 'Near Me',
+      routeName: 'nearme',
       items: [
         {
           id: 23,
-          name: 'Blue Tanktop',
-          imageUrl: 'https://i.ibb.co/7CQVJNm/blue-tank.png',
-          price: 25
+          name: 'Apte Garages and Services',
+          imageUrl: 'https://images.pexels.com/photos/4489794/pexels-photo-4489794.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Paud Road"
+         
         },
         {
           id: 24,
-          name: 'Floral Blouse',
-          imageUrl: 'https://i.ibb.co/4W2DGKm/floral-blouse.png',
-          price: 20
+          name: 'AutoMechs',
+          imageUrl: 'https://images.pexels.com/photos/4489760/pexels-photo-4489760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Kothrud"
+         
         },
         {
           id: 25,
-          name: 'Floral Dress',
-          imageUrl: 'https://i.ibb.co/KV18Ysr/floral-skirt.png',
-          price: 80
+          
+          name: 'Mech Service Cener',
+          imageUrl: 'https://images.pexels.com/photos/372810/pexels-photo-372810.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Paud Road"
         },
         {
           id: 26,
-          name: 'Red Dots Dress',
-          imageUrl: 'https://i.ibb.co/N3BN1bh/red-polka-dot-dress.png',
-          price: 80
+          name: 'Anand Car center',
+          imageUrl: 'https://images.pexels.com/photos/4480461/pexels-photo-4480461.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Paud Road"
         },
         {
           id: 27,
-          name: 'Striped Sweater',
-          imageUrl: 'https://i.ibb.co/KmSkMbH/striped-sweater.png',
-          price: 45
+          name: 'Raju Garages',
+          imageUrl: 'https://images.pexels.com/photos/4489749/pexels-photo-4489749.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Kothrud"
         },
         {
           id: 28,
-          name: 'Yellow Track Suit',
-          imageUrl: 'https://i.ibb.co/v1cvwNf/yellow-track-suit.png',
-          price: 135
+          name: 'Ganesh Garages',
+          imageUrl: 'https://images.pexels.com/photos/1131221/pexels-photo-1131221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+          price: "Kothrud"
         },
         {
           id: 29,
-          name: 'White Blouse',
-          imageUrl: 'https://i.ibb.co/qBcrsJg/white-vest.png',
-          price: 20
+          name: 'My Bike Care Center',
+          imageUrl: 'https://images.unsplash.com/photo-1594132665437-d2e8fd3c7ed0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+          price: "Kothrud"
         }
       ]
     },
-    {
-      id: 5,
-      title: 'Mens',
-      routeName: 'mens',
-      items: [
-        {
-          id: 30,
-          name: 'Camo Down Vest',
-          imageUrl: 'https://i.ibb.co/xJS0T3Y/camo-vest.png',
-          price: 325
-        },
-        {
-          id: 31,
-          name: 'Floral T-shirt',
-          imageUrl: 'https://i.ibb.co/qMQ75QZ/floral-shirt.png',
-          price: 20
-        },
-        {
-          id: 32,
-          name: 'Black & White Longsleeve',
-          imageUrl: 'https://i.ibb.co/55z32tw/long-sleeve.png',
-          price: 25
-        },
-        {
-          id: 33,
-          name: 'Pink T-shirt',
-          imageUrl: 'https://i.ibb.co/RvwnBL8/pink-shirt.png',
-          price: 25
-        },
-        {
-          id: 34,
-          name: 'Jean Long Sleeve',
-          imageUrl: 'https://i.ibb.co/VpW4x5t/roll-up-jean-shirt.png',
-          price: 40
-        },
-        {
-          id: 35,
-          name: 'Burgundy T-shirt',
-          imageUrl: 'https://i.ibb.co/mh3VM1f/polka-dot-shirt.png',
-          price: 25
-        }
-      ]
-    }
+    
   ];
   
   export default SHOP_DATA;

@@ -25,7 +25,7 @@ const Footer=()=>(
            <ul>
              <li className="listelement"><Link className="option" to="/">Home</Link>  </li>
              <li className="listelement"><Link className="option" to="/shop">Shop</Link></li>
-             <li className="listelement"><Link className="option" to="/signin">SignUp</Link></li>
+             <li className="listelement"><Link className="option" to="/chooseuser">SignUp</Link></li>
              <li className="listelement"><Link className="option" to="/aboutus">AboutUs</Link></li>
            </ul>
       </div>
