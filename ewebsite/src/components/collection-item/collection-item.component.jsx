@@ -1,6 +1,7 @@
 import React from "react";
 import CustomButton from '../custom-button/custom-button.component';
 import './collection-item.styles.scss';
+import { Route,Link } from "react-router-dom";
 
 const CollectionItem = ({id,name,price,imageUrl})=>(
     <div className="collection-item">
@@ -13,7 +14,11 @@ const CollectionItem = ({id,name,price,imageUrl})=>(
          <span className='name'>{name}</span>
          <span className='price'>{price}</span>
          </div>
-         <CustomButton inverted>SELECT</CustomButton>
+         <Route>
+             <Link to={`/shopdetails/${id}`}> <CustomButton inverted>SELECT</CustomButton></Link>
+        
+         </Route>
+         
         </div>
 
 
@@ -21,3 +26,4 @@ const CollectionItem = ({id,name,price,imageUrl})=>(
 );
 
 export default CollectionItem;
+// <CustomButton inverted>SELECT</CustomButton>
