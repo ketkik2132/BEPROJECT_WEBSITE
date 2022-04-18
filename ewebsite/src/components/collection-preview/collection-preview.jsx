@@ -49,9 +49,10 @@ import CollectionItem from "../collection-item/collection-item.component";
         </div>
     </div>
 )*/
-const CollectionPreview = ({ title, items }) => (
+const CollectionPreview = ({ title, items,id }) => (
     <div className='collection-preview'>
       <h1 className='title'>{title.toUpperCase()}</h1>
+      <h1>{id}</h1>
       <div className='preview'>
         {items
           .filter((item, idx) => idx < 4)

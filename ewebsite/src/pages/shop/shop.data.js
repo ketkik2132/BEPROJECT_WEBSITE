@@ -6,21 +6,44 @@ const SHOP_DATA = [
       items: [
         {
           id: 1,
-          name: 'Ganesh Garages',
+          contact:9822855773,
+          name: 'Kothrud Auto Service Station',
           imageUrl: 'https://images.pexels.com/photos/1131221/pexels-photo-1131221.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
-          price: "Kothrud"
+          price: "Kothrud",
+          address:" Shop No. 1, Pushpashanti Tower, Mayur Colony, Kothrud, Pune, Maharashtra 411038",
+          lat:18.5040365,
+          lng:73.81487265,
+          services:[
+            {
+              servicename:"Washing",
+              serviceprice:1500,
+              serviceid:0,
+            },
+            {
+              servicename:"Painting",
+              serviceprice:3500,
+              serviceid:1,
+            },
+            {
+              servicename:"Oiling",
+              serviceprice:1000,
+              serviceid:2,
+            }
+          ]
         },
         {
           id: 2,
           name: 'AutoCare center',
           imageUrl: 'https://images.unsplash.com/photo-1594132665437-d2e8fd3c7ed0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-          price: "Warje"
+          price: "Warje",
+          
         },
         {
           id: 3,
           name: 'New Bike servicing center',
           imageUrl: 'https://images.unsplash.com/photo-1581858544302-c40e2254ff87?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80',
-          price: "Warje"
+          price: "Warje",
+          
         },
         {
           id: 4,

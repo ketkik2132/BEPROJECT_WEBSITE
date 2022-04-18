@@ -15,7 +15,7 @@ const CollectionItem = ({id,name,price,imageUrl})=>(
          <span className='price'>{price}</span>
          </div>
          <Route>
-             <Link to={`/shopdetails/${id}`}> <CustomButton inverted>SELECT</CustomButton></Link>
+             <Link to={`/shopdetails/${id}`}  > <CustomButton inverted>SELECT</CustomButton></Link>
         
          </Route>
          

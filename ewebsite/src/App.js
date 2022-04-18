@@ -16,6 +16,7 @@ import { setCurrentUser } from './redux/user/user.actions';
 import { auth,createUserProfileDocument } from './firebase/firebase.utils';
 import ChooseUser from './pages/chooseUser/chooseuser.component';
 import TwoWheeler from './pages/two-wheeler/two-wheeler.component';
+import Cart from './pages/cartPage/cartPage.component';
 
 
 import CollectionPreview from './components/collection-preview/collection-preview';
@@ -55,12 +56,13 @@ componentWillUnmount(){
      <Switch>
 
      <Route exact path='/' component={HomePage} />
+     <Route exact path='/cartPage' component={Cart} />
      <Route exact path='/twowheeler' component={TwoWheeler} />
      <Route exact path='/shop' component={ShopPage} />
      <Route exact path='/userdetails' component={DetailsPage} />
      <Route exact path='/aboutus' component={AboutUs} />
      <Route exact path='/chooseuser' component={ChooseUser} />
-     <Route exact path='/shopdetails/:id' render={props=>(<ShopDetails {...props}/>)}></Route>
+     <Route exact path='/shopdetails/:id' render={props=>(<ShopDetails {...props} />)}></Route>
      <Route exact path='/chooseuser/customersignin' render={()=>this.props.currentUser?(<Redirect to="/" />) : (<SignInAndSignUp />)} />
      <Route exact path='/chooseuser/servicesignin'  render={()=>this.props.currentUser?(<Redirect to="/" />) : (<SignInAndSignUp />)} />
      </Switch>
