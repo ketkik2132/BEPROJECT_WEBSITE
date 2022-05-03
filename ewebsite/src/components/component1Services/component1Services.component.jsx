@@ -2,7 +2,7 @@
 import React from "react";
 import './component1Services.styles.scss';
 import SHOP_DATA from "../../pages/shop/shop.data";
-
+import {Link} from 'react-router-dom';
 import { useState } from "react";
 
 import { connect } from "react-redux";
@@ -35,7 +35,7 @@ componentDidMount(){
               </div>
          ))}
 
-         <span className="button2">Proceed</span>
+         <span className="button2"><Link to="/cartPage">Proceed</Link></span>
        </div>
      )
   }

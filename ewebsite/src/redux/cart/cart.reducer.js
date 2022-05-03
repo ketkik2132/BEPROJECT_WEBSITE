@@ -12,6 +12,7 @@ const cartReducer = (state = INITIAL_STATE, action) => {
           ...state,
           hidden: !state.hidden
         };
+
         case CartActionTypes.ADD_ITEM:
           return{
             ...state,
@@ -49,13 +50,13 @@ const cartReducer = (state = INITIAL_STATE, action) => {
             return{
                 ...state,
                 numberCart:state.numberCart+1
-            }
+            };
 
-            case DELETE_CART:
-                let quantity_ = state.Carts[action.payload].quantity;
+            case CartActionTypes.DELETE_CART:
+               // let quantity_ = state.Carts[action.payload].quantity;
                 return{
                     ...state,
-                    numberCart:state.numberCart - quantity_,
+                   // numberCart:state.numberCart - quantity_,
                     Carts:state.Carts.filter(item=>{
                         return item.id!=state.Carts[action.payload].id
                     })

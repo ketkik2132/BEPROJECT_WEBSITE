@@ -17,7 +17,7 @@ import { auth,createUserProfileDocument } from './firebase/firebase.utils';
 import ChooseUser from './pages/chooseUser/chooseuser.component';
 import TwoWheeler from './pages/two-wheeler/two-wheeler.component';
 import Cart from './pages/cartPage/cartPage.component';
-
+import CenterSignInAndSignUp from './pages/Service-sign-in-and-sign-up/service-sign-in-and-sign-up';
 
 import CollectionPreview from './components/collection-preview/collection-preview';
 
@@ -63,7 +63,7 @@ componentWillUnmount(){
      <Route exact path='/aboutus' component={AboutUs} />
      <Route exact path='/chooseuser' component={ChooseUser} />
      <Route exact path='/shopdetails/:id' render={props=>(<ShopDetails {...props} />)}></Route>
-     <Route exact path='/chooseuser/customersignin' render={()=>this.props.currentUser?(<Redirect to="/" />) : (<SignInAndSignUp />)} />
+     <Route exact path='/chooseuser/customersignin' render={()=>this.props.currentUser?(<Redirect to="/" />) : (<CenterSignInAndSignUp />)} />
      <Route exact path='/chooseuser/servicesignin'  render={()=>this.props.currentUser?(<Redirect to="/" />) : (<SignInAndSignUp />)} />
      </Switch>
      <Footer></Footer>
