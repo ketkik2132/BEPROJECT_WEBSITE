@@ -6,6 +6,8 @@ const DetailsPage=()=>(
         <UserDetails></UserDetails>
        
     </div>
+
+    
 )
 
 export default DetailsPage;

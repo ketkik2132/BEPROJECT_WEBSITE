@@ -8,6 +8,7 @@ import Header from './components/header/header.component';
 import Footer from './components/footer/footer.component';
 import DetailsPage from './pages/userdetail/user-detailpage.component';
 import SignInAndSignUp from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
+import BlackBox from './components/black_box/black_box';
 import { Route, Redirect} from 'react-router-dom';
 import { Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -56,6 +57,7 @@ componentWillUnmount(){
     <div>
      <Header></Header>
      <Switch>
+     <Route exact path='/black_box' component={BlackBox} />
      <Route exact path='/' component={HomePage} />
      <Route exact path='/twowheeler' component={TwoWheeler} />
      <Route exact path='/shop' component={ShopPage} />
@@ -64,6 +66,7 @@ componentWillUnmount(){
      <Route exact path='/chooseuser' component={ChooseUser} />
      <Route exact path='/chooseuser/customersignin' render={()=>this.props.currentUser?(<Redirect to="/" />) : (<SignInAndSignUp />)} />
      <Route exact path='/chooseuser/servicesignin'  render={()=>this.props.currentUser?(<Redirect to="/" />) : (<SignInAndSignUp />)} />
+     
      </Switch>
      <Footer></Footer>
     </div>

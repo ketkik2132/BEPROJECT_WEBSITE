@@ -1,5 +1,9 @@
 .formdiv{
-width: 40px;
-height: 50%;
-color: black;
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+   
+    .title {
+      margin: 10px 0;
+    }
 }
