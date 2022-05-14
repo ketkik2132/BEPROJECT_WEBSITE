@@ -61,7 +61,7 @@ const config={
   export const createServiceCenterProfileDocument = async (userAuth, additionalData) => {
     if (!userAuth) return;
   
-    const userRef = firestore.doc(`serviceCenters/${userAuth.uid}`);
+    const userRef = firestore.doc(`users/${userAuth.uid}`);
   
     const snapShot = await userRef.get();
   

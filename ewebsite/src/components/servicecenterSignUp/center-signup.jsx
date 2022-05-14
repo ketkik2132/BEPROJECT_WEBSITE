@@ -2,14 +2,14 @@ import React from "react";
 import FormInput from "../form-input/form-input.component";
 import CustomButton from "../custom-button/custom-button.component";
 
-import {auth,createUserProfileDocument} from '../../firebase/firebase.utils';
-import './sign-up.styles.scss';
+import {auth,createServiceCenterProfileDocument} from '../../firebase/firebase.utils';
+import './center-signup.scss';
 
-class SignUp extends React.Component{
+class ServiceCenterSignUp extends React.Component{
     constructor(){
         super();
         this.state={
-            displayName:'',
+            garage_name:'',
             email:'',
             password:'',
             confirmPassword:''
@@ -17,7 +17,7 @@ class SignUp extends React.Component{
     }
       handleSubmit = async event=>{
        event.preventDefault();//to prevent default submitting of form
-       const {displayName,email,password,confirmPassword}=this.state;
+       const {garage_name,email,password,confirmPassword}=this.state;
 
        //check if password and confirm password match if not return
        if(password!== confirmPassword){
@@ -28,13 +28,14 @@ class SignUp extends React.Component{
         alert("Password is too short");
         return;
     }
+      
     
        try{
        const {user} =await auth.createUserWithEmailAndPassword(email,password);
-       await createUserProfileDocument(user,{displayName});
+       await createServiceCenterProfileDocument (user,{garage_name});
        //after user is created we will set state
        this.setState({
-        displayName:'',
+        garage_name:'',
         email:'',
         password:'',
         confirmPassword:''
@@ -52,17 +53,17 @@ class SignUp extends React.Component{
           this.setState({[name]:value});
       }
     render(){
-        const {displayName,email,password,confirmPassword}=this.state;
+        const {garage_name,email,password,confirmPassword}=this.state;
         return(
             <div className="sign-up">
                 <h2 className="title">I do not have a account</h2>
                 <span>Sign up with your email and password</span>
             <form className="sign-up-form" onSubmit={this.handleSubmit}>
              <FormInput
-             type='text' name='displayName' value={displayName}
+             type='text' name='displayName' value={garage_name}
              onChange={this.handleChange}
-             label='Display Name'
-             required>
+             label='Garage Name'
+           >
              </FormInput>
 
              <FormInput
@@ -92,4 +93,4 @@ class SignUp extends React.Component{
     }
 }
 
-export default SignUp;
+export default ServiceCenterSignUp;

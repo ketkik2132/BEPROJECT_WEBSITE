@@ -1,5 +1,11 @@
-.formdiv{
-width: 40px;
-height: 50%;
-color: black;
+
+.userdetails{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin-left: 15vw;
+    margin-right: 15vw;  
+    .title {
+      margin: 10px 0;
+    }
 }
