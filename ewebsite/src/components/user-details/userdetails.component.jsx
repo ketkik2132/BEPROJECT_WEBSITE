@@ -4,7 +4,7 @@ import CustomButton from '../custom-button/custom-button.component';
 import Geocode from "react-geocode";
 import {firestore,auth,createServiceCenterProfileDocument} from '../../firebase/firebase.utils';
 import './userdetails.styles.scss';
-
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 
 class UserDetails extends React.Component {
     constructor(props) {
@@ -14,12 +14,13 @@ class UserDetails extends React.Component {
         area:'',
         city:'',
         pincode:'',
-        contact: ''
+        contact: '',
+        garage_name:''
       };
       };
      handleSubmit = async event => {
         event.preventDefault();
-        const {address, area, city, pincode, contact } = this.state;
+        const {address, area, city, pincode, contact,garage_name } = this.state;
         //Geocode.setLanguage("en");
         try {/*
           Geocode.fromAddress("Eiffel Tower").then(
@@ -38,13 +39,15 @@ class UserDetails extends React.Component {
             city: city,
             contact:contact,
             pincode:pincode,
+            garage_name: garage_name,
+            accepted:false,
 
           }).then(function() {
             console.log("Frank created");
           });
           //await auth.signInWithEmailAndPassword(address, area, city, pincode, contact);
           //createServiceCenterProfileDocument();
-          this.setState({ address: '', area: '', city: '', pincode: '', contact: '' });
+          this.setState({ address: '', area: '', city: '', pincode: '', contact: '' ,garage_name:''});
         } catch (error) {
           console.log(error);
         }
@@ -58,12 +61,19 @@ class UserDetails extends React.Component {
       };
     
       render(){
-        const {address,area,city,pincode,contact}=this.state;
+        const {address,area,city,pincode,contact,garage_name}=this.state;
         return(
             <div className="userdetails">
                 <h2 className="title">I am creating an account</h2>
                 <span>Enter your details</span>
             <form className="User-details-form" onSubmit={this.handleSubmit}>
+            <FormInput
+             type='text' name='garage_name' value={garage_name}
+             onChange={this.handleChange}
+             label='Name'
+             required>
+             </FormInput>
+
              <FormInput
              type='text' name='address' value={address}
              onChange={this.handleChange}
@@ -99,7 +109,7 @@ class UserDetails extends React.Component {
              required>
              </FormInput>
 
-             <CustomButton  type='submit' > NEXT </CustomButton>
+             <CustomButton  type='submit' > <Link to="/cartPage">NEXT </Link></CustomButton>
             </form>
             </div>
         )

@@ -20,7 +20,9 @@ import Cart from './pages/cartPage/cartPage.component';
 import CenterSignInAndSignUp from './pages/Service-sign-in-and-sign-up/service-sign-in-and-sign-up';
 import UserDetails from './components/user-details/userdetails.component';
 import CollectionPreview from './components/collection-preview/collection-preview';
-
+import AddServices from './components/add-services/add-services.component';
+import SHome from './pages/SHomePage/shome-page.component';
+import UpdateDetails from './pages/updateserviceCenter/update-details';
 class App extends React.Component {
 
 unsubscribeFromAuth=null;
@@ -54,8 +56,10 @@ componentWillUnmount(){
     <div>
      <Header></Header>
      <Switch>
-
+     <Route exact path='/addservices' component={AddServices} />
      <Route exact path='/' component={HomePage} />
+     <Route exact path='/updatedetails' component={UpdateDetails} />
+     <Route exact path='/shome' component={SHome} />
      <Route exact path='/cartPage' component={Cart} />
      <Route exact path='/twowheeler' component={TwoWheeler} />
      <Route exact path='/shop' component={ShopPage} />

@@ -59,13 +59,7 @@ class ServiceCenterSignUp extends React.Component{
                 <h2 className="title">I do not have a account</h2>
                 <span>Sign up with your email and password</span>
             <form className="sign-up-form" onSubmit={this.handleSubmit}>
-             <FormInput
-             type='text' name='displayName' value={garage_name}
-             onChange={this.handleChange}
-             label='Garage Name'
-           >
-             </FormInput>
-
+         
              <FormInput
              type='email' name='email' value={email}
              onChange={this.handleChange}
