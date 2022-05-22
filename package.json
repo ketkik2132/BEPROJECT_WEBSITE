@@ -1,0 +1,55 @@
+{
+  "name": "ewebsite",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
+    "@googlemaps/react-wrapper": "^1.1.34",
+    "@material-ui/core": "^4.12.4",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.4",
+    "@testing-library/user-event": "^13.5.0",
+    "firebase": "^9.6.9",
+    "node-sass": "^7.0.1",
+    "react": "^17.0.2",
+    "react-cool-tabs": "^1.1.6",
+    "react-dom": "^17.0.2",
+    "react-facebook-photo-grid": "^1.0.10",
+    "react-geocode": "^0.2.3",
+    "react-icons": "^4.3.1",
+    "react-redux": "^7.2.8",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "5.0.0",
+    "react-stripe-checkout": "^2.6.3",
+    "react-web-tabs": "^1.0.1",
+    "redux": "^4.1.2",
+    "redux-logger": "^3.0.6",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

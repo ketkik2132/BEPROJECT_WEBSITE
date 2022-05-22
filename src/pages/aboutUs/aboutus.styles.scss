@@ -1,0 +1,81 @@
+.maindiv{
+    width: 100%;
+    
+    .row1{
+        background-image: url("https://images.pexels.com/photos/5121547/pexels-photo-5121547.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-size: cover;
+        height: 65vh;
+        width: 100%;
+        text-align: right;
+        .text{
+          margin-top: 10px;
+         margin-right: 10px;
+        .row1title{
+            
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(255, 253, 253);
+            font-size: 50px;
+            
+            
+        }
+    }
+    .text2{
+        text-align:right;
+        margin-top: 5vh;
+        margin-right: 10px;
+        .titledesription{
+            
+            font-family: 'Trebuchet MS', sans-serif;
+            color: white;
+            font-size: 25px;
+          
+          
+        }
+    }
+       
+    }
+
+    .row2{
+        margin-top: 7vh;
+        height: 50vh;
+        width: 100%;
+        .title{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: auto;
+            text-align: center;
+        }
+
+        .points{
+            margin-top: 5vh;
+           background-color: white;
+           height: 90%;
+           width: 100%;
+           
+           display: flex;
+          
+           .point{
+            font-family: Arial, Helvetica, sans-serif;
+            margin-left: 5vw;
+            margin-right: 5vw;
+          
+            .big{
+                color:darkred;
+                font-family: 'Trebuchet MS', sans-serif;
+                font-size: 75px;
+            }
+            .subtitle{
+                color:black;
+                font-family: 'Trebuchet MS', sans-serif;
+                font-size: 4vh;
+            }
+            .description{
+                color: gray;
+                font-family: 'Trebuchet MS', sans-serif;
+                font-size: 2vh;
+            }
+           }
+
+
+        }
+    }
+}

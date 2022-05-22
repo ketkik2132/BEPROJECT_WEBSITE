@@ -1,0 +1,84 @@
+.maindiv{
+      width: 100%;
+     font-family: Arial, Helvetica, sans-serif;
+     .innerdiv{
+        .shoptabs{
+            height:max-content; 
+            width: 90%;
+            left: 20%;
+            right: 10%;
+            margin-left: 8%;
+            margin-right: 8%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size:x-large;
+            justify-content: center;
+        } 
+        .shopimages{
+            position:relative;
+            margin-top: 8%;
+            bottom: 20px;
+            left: 5%;
+            right: 5%;
+            background-color: white;
+            text-align: center;
+            margin-left: 5%;
+            margin-right: 5%;
+            width: 90%;
+            
+            
+        }
+        .shopdesc{
+            font-family: Arial, Helvetica, sans-serif;
+            position:relative;
+            height: max-content;
+            margin-top: 2%;
+            bottom: 20px;
+            left: 8%;
+            right: 8%;
+            text-align: start;
+            padding: 10px 10px;
+            width: 90%;
+            .button-array{
+                display: flex;
+                .custom-button{
+                align-items: flex-start;
+                margin: 1% 1%;
+          min-width: 165px;
+          width: auto;
+          height: 50px;
+          letter-spacing: 0.5px;
+          line-height: 50px;
+          font-size:small;
+          background-color: black;
+          color: white;
+          text-transform: uppercase;
+          font-family: 'Open Sans Condensed';
+          font-weight: bolder;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+        
+          &:hover {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+          }
+        }
+      
+            }
+            .shop-name{
+             margin: 1%;
+             padding-top: 1vh;
+             font-size:xx-large;
+            }
+            .shop-location{
+                margin: 1%;
+                font-size:large;
+                padding-top: 1vh;
+            }
+        }
+
+     }
+  
+   
+}

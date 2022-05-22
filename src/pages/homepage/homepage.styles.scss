@@ -1,0 +1,64 @@
+.homepage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 80px;
+    .joinus{
+      height: 45vh;
+      width: 100%;
+      margin-top: 7%;
+      background-color: rgb(27, 23, 23);
+      .innerdiv{
+        color: white;
+        opacity: 1;
+        height: 60%;
+        width: 60%;
+        margin: 5% auto;
+        background-color: rgb(77, 72, 72);
+
+        .infotitle{
+          color: white;
+          opacity: 1;
+          
+          font-size: 45px;
+          margin: 30% 25%;
+        }
+        .info{
+          color: white;
+          opacity: 1;
+          
+          font-size: 15px;
+          margin: 30% 18%;
+        }
+
+        .custom-button {
+          margin: 5% 40%;
+          min-width: 165px;
+          width: auto;
+          height: 50px;
+          letter-spacing: 0.5px;
+          line-height: 50px;
+          padding: 0 35px 0 35px;
+          font-size: 15px;
+          background-color: black;
+          color: white;
+          text-transform: uppercase;
+          font-family: 'Open Sans Condensed';
+          font-weight: bolder;
+          border: none;
+          cursor: pointer;
+          border-radius: 20px;
+        
+          &:hover {
+            background-color: white;
+            color: black;
+            border: 1px solid black;
+          }
+      
+         
+        }
+
+      }
+    }
+  }
+  
