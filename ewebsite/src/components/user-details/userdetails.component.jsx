@@ -109,7 +109,7 @@ class UserDetails extends React.Component {
              required>
              </FormInput>
 
-             <CustomButton  type='submit' > <Link to="/cartPage">NEXT </Link></CustomButton>
+             <CustomButton  type='submit' > <Link to="/addservices">NEXT </Link></CustomButton>
             </form>
             </div>
         )

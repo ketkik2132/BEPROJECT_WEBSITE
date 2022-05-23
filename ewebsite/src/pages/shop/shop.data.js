@@ -1,7 +1,7 @@
 const SHOP_DATA = [
     {
       id: 1,
-      title: 'Top Two Wheeler',
+      title: 'Two Wheeler',
       routeName: 'toptwowheel',
       items: [
         {
@@ -85,7 +85,7 @@ const SHOP_DATA = [
     },
     {
       id: 2,
-      title: 'Top Four Wheeler',
+      title: 'Four Wheeler',
       routeName: 'topfourwheel',
       items: [
         {

@@ -25,13 +25,14 @@ class UpdateDetails extends React.Component{
             
             try {
              
-              firestore.collection("serviceCenters").doc(contact).set({
+              firestore.collection("serviceCenters").doc(contact).update({
                 address: address,
                 area: area,
                 city: city,
                 contact:contact,
                 pincode:pincode,
                 garage_name: garage_name,
+                accepted:true
     
               }).then(function() {
                 console.log("Frank created");

@@ -1,5 +1,6 @@
 //styling for each individual shop page
 import React from "react";
+import FormInput from "../../components/form-input/form-input.component";
 import SHOP_DATA from "../shop/shop.data";
 import './shopdetails.styles.scss';
 import Photogrid from "react-facebook-photo-grid";
@@ -48,8 +49,7 @@ class ShopDetails extends React.Component{
             window.open("https://maps.google.com?q="+data.lat+","+data.lng );}}> Location </button>  </div>
                     
                   </div>
-
-
+                 
                   <div className='shoptabs'>
                  <CoolTabs
 	       tabKey={'1'}

@@ -23,6 +23,9 @@ import CollectionPreview from './components/collection-preview/collection-previe
 import AddServices from './components/add-services/add-services.component';
 import SHome from './pages/SHomePage/shome-page.component';
 import UpdateDetails from './pages/updateserviceCenter/update-details';
+import Slot from './components/slots/slot.component';
+import currentBooking from './pages/currentBooking/currentBooking';
+import AddService from './components/add-services/add-services.component';
 class App extends React.Component {
 
 unsubscribeFromAuth=null;
@@ -58,6 +61,7 @@ componentWillUnmount(){
      <Switch>
      <Route exact path='/addservices' component={AddServices} />
      <Route exact path='/' component={HomePage} />
+     <Route exact path='/currentBooking' component={currentBooking} />
      <Route exact path='/updatedetails' component={UpdateDetails} />
      <Route exact path='/shome' component={SHome} />
      <Route exact path='/cartPage' component={Cart} />
@@ -67,6 +71,7 @@ componentWillUnmount(){
      <Route exact path='/details' component={UserDetails} />
      <Route exact path='/aboutus' component={AboutUs} />
      <Route exact path='/chooseuser' component={ChooseUser} />
+     <Route exact path='/slots' component={Slot} />
      <Route exact path='/shopdetails/:id' render={props=>(<ShopDetails {...props} />)}></Route>
      <Route exact path='/chooseuser/customersignin' render={()=>this.props.currentUser?(<Redirect to="/" />) : (<SignInAndSignUp />)} />
      <Route exact path='/chooseuser/servicesignin'  render={()=>this.props.currentUser?(<Redirect to="/details" />) : (<CenterSignInAndSignUp />)} />

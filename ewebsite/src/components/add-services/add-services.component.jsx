@@ -97,7 +97,8 @@ class AddService extends React.Component {
 
              
 
-             <CustomButton type='submit' > <Link to="/shome">ADD </Link></CustomButton>
+             <CustomButton type='submit' className="b"> ADD</CustomButton>
+             <CustomButton  > <Link to="/slots" className="b">Next </Link></CustomButton>
             </form>
             </div>
         )

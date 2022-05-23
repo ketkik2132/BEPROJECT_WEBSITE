@@ -1,9 +1,41 @@
-table{
- 
-    width: 80%;
-    font-size: larger;
-    left: 10%;
-    right: 10%;
+
+
+.cartTable
+{
+  width: 80%;
+  font-size: larger;
+  left: 10%;
+  right: 10%;
   align-content: center;
-   
+  border-style: groove;
+  border: 1px solid;
+  margin-left: 10%;
+  
+}
+.confirm{
+  margin-left: 46%;
+  margin-top: 3%;
+  margin-bottom: 4%;
+}
+.stripe{
+  margin-left: 50%;
+}
+
+.totalprice
+{
+  
+  font-size: larger;
+  margin-left: 48%;
+  
+  
+}
+.h2class{
+  margin-left: 42%;
+  margin-top: 3%;
+
+}
+.dates{
+  margin-left: 47%;
+  margin-top: 1%;
+  margin-bottom: 4%;
 }
